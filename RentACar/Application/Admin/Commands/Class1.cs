@@ -14,6 +14,5 @@ namespace RentACar.Application.Admin.Commands
         //ben zafer 1
         //deneme
         //deneme 1
-
     }
 }
