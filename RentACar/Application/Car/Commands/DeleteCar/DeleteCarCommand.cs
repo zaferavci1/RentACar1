@@ -10,11 +10,9 @@ namespace RentACar.Application.Car.Commands.DeleteCar
     public class DeleteCarCommand
     {
         public int id { get; set; }
-        private readonly IMapper _mapper;
         private readonly RentACarDbContext _context;
-        public DeleteCarCommand(IMapper mapper, RentACarDbContext context)
+        public DeleteCarCommand(RentACarDbContext context)
         {
-            _mapper = mapper;
             _context = context;
         }
         public void Handle()

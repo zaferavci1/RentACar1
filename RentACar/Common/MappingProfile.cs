@@ -1,4 +1,8 @@
 ﻿using AutoMapper;
+using RentACar.Application.Admin.Commands;
+using RentACar.Application.Admin.Commands.CreateAdmin;
+using RentACar.Application.Admin.Queries.GetAdmins;
+using RentACar.Application.Admin.Queries.GetById;
 using RentACar.Application.Car.Commands.CreateCar;
 using RentACar.Application.Car.Queries.GetById;
 using RentACar.Application.Car.Queries.GetCars;
@@ -17,6 +21,9 @@ namespace RentACar.Common
             CreateMap<CreateCarModel, Car>();
             CreateMap<Car, GetByIdCarModel>();
             CreateMap<List<Car>, List<GetCarsModel>>();
+            CreateMap<CreateAdminModel, Admin>();
+            CreateMap<List<Admin>, List<GetAdminsModel>>();
+            CreateMap<Admin, GetByIdAdminModel>();
 
         }
     }

@@ -155,7 +155,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Application\Admin\Commands\CreatAdminCommand.cs" />
+    <Compile Include="Application\Admin\Commands\CreateAdmin\CreateAdminCommand.cs" />
+    <Compile Include="Application\Admin\Commands\DeleteAdmin\DeleteAdminCommand.cs" />
+    <Compile Include="Application\Admin\Commands\UpdateAdmin\UpdateAdminCommand.cs" />
+    <Compile Include="Application\Admin\Queries\GetAdmins\GetAdminsQuery.cs" />
+    <Compile Include="Application\Admin\Queries\GetById\GetByIdAdminQuery.cs" />
     <Compile Include="Application\Car\Commands\CreateCar\CreateCarCommand.cs" />
     <Compile Include="Application\Car\Commands\DeleteCar\DeleteCarCommand.cs" />
     <Compile Include="Application\Car\Commands\UpdateCar\UpdateCarCommand.cs" />
@@ -216,7 +220,6 @@
     <Content Include="Views\Home\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Application\Admin\Queries\" />
     <Folder Include="Application\Category\" />
     <Folder Include="Application\Color\Commands\" />
     <Folder Include="Application\Color\Queries\" />
