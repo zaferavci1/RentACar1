@@ -124,6 +124,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Application\Admin\Commands\Class1.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
@@ -178,7 +179,6 @@
     <Content Include="Views\Home\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Application\Admin\Commands\" />
     <Folder Include="Application\Admin\Queries\" />
     <Folder Include="Application\Car\Commands\" />
     <Folder Include="Application\Car\Queries\" />
