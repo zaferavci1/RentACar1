@@ -7,5 +7,6 @@ namespace RentACar.Application.Admin.Commands
 {
     public class Class1
     {
+        //merhaba
     }
 }
