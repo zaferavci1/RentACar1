@@ -156,10 +156,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Application\Admin\Commands\CreatAdminCommand.cs" />
-    <Compile Include="Application\Car\Commands\CreateCarCommand.cs" />
+    <Compile Include="Application\Car\Commands\CreateCar\CreateCarCommand.cs" />
+    <Compile Include="Application\Car\Commands\DeleteCar\DeleteCarCommand.cs" />
+    <Compile Include="Application\Car\Commands\UpdateCar\UpdateCarCommand.cs" />
+    <Compile Include="Application\Car\Queries\GetById\GetByIdCarQuery.cs" />
+    <Compile Include="Application\Car\Queries\GetCars\GetCarsQuery.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Common\MappingProfile.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -212,9 +217,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Application\Admin\Queries\" />
-    <Folder Include="Application\Car\Queries\" />
-    <Folder Include="Application\Category\Commands\" />
-    <Folder Include="Application\Category\Queries\" />
+    <Folder Include="Application\Category\" />
     <Folder Include="Application\Color\Commands\" />
     <Folder Include="Application\Color\Queries\" />
     <Folder Include="Application\Comment\Commands\" />

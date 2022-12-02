@@ -7,7 +7,7 @@ using System.Web;
 
 namespace RentACar.Models
 {
-    public class Context : DbContext
+    public class RentACarDbContext : DbContext
     {
         public DbSet<Admin> Admins { get; set; }
         public DbSet<Car> Cars { get; set; }

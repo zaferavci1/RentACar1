@@ -6,17 +6,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace RentACar.Application.Car.Commands
+namespace RentACar.Application.Car.Commands.CreateCar
 {
-    public class CreateCarCommand
+    public class CreateCategoryCommand
     {
-        private readonly IMapper mapper;
+        private readonly IMapper _mapper;
+        private readonly RentACarDbContext _context;
         public CreateCarModel carModel { get; set; }
-        private readonly Context _context;
-        public CreateCarCommand(IMapper mapper , Context context  )
+        public CreateCategoryCommand(IMapper mapper , RentACarDbContext context  )
         {
-            this.mapper = mapper;
-            this._context = context;
+            _mapper = mapper;
+            _context = context;
         }
 
         public void Handle()
@@ -26,10 +26,9 @@ namespace RentACar.Application.Car.Commands
             {
                 throw new Exception("bu markada bir araba var");
             }
-
+            car = _mapper.Map<RentACar.Models.Siniflar.Car>(carModel);
             _context.Cars.Add(car);
             _context.SaveChanges();
-            //serkan
         }
     }
 

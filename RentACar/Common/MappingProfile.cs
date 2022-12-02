@@ -1,5 +1,7 @@
 ﻿using AutoMapper;
-using RentACar.Application.Car.Commands;
+using RentACar.Application.Car.Commands.CreateCar;
+using RentACar.Application.Car.Queries.GetById;
+using RentACar.Application.Car.Queries.GetCars;
 using RentACar.Models.Siniflar;
 using System;
 using System.Collections.Generic;
@@ -13,6 +15,9 @@ namespace RentACar.Common
         public MappingProfile()
         {
             CreateMap<CreateCarModel, Car>();
+            CreateMap<Car, GetByIdCarModel>();
+            CreateMap<List<Car>, List<GetCarsModel>>();
+
         }
     }
 }

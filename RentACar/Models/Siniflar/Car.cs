@@ -14,5 +14,6 @@ namespace RentACar.Models.Siniflar
         public Color Color { get; set; }
         public int Price { get; set; }
         public int SeatCount { get; set; }
+
     }
 }
