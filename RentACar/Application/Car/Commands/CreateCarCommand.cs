@@ -13,6 +13,11 @@ namespace RentACar.Application.Car.Commands
         private readonly IMapper mapper;
         public CreateCarModel carModel { get; set; }
         private readonly Context _context;
+        public CreateCarCommand(IMapper mapper , Context context  )
+        {
+            this.mapper = mapper;
+            this._context = context;
+        }
 
         public void Handle()
         {
