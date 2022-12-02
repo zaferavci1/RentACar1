@@ -29,6 +29,7 @@ namespace RentACar.Application.Car.Commands
 
             _context.Cars.Add(car);
             _context.SaveChanges();
+            //serkan
         }
     }
 
