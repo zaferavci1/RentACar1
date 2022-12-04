@@ -18,7 +18,7 @@ namespace RentACar.Application.Car.Commands.DeleteCar
         public void Handle()
         {
             var car = _context.Cars.SingleOrDefault(x => x.Id == id);
-            if (car ==null) {
+            if (car == null) {
                 throw new InvalidOperationException("silinecek araba bulanamdı");
             }
             _context.Cars.Remove(car);
