@@ -6,6 +6,9 @@ using RentACar.Application.Admin.Queries.GetById;
 using RentACar.Application.Car.Commands.CreateCar;
 using RentACar.Application.Car.Queries.GetById;
 using RentACar.Application.Car.Queries.GetCars;
+using RentACar.Application.Color.Commands;
+using RentACar.Application.Color.Queries.GetById;
+using RentACar.Application.Color.Queries.GetColor;
 using RentACar.Models.Siniflar;
 using System;
 using System.Collections.Generic;
@@ -24,7 +27,9 @@ namespace RentACar.Common
             CreateMap<CreateAdminModel, Admin>();
             CreateMap<List<Admin>, List<GetAdminsModel>>();
             CreateMap<Admin, GetByIdAdminModel>();
-
+            CreateMap<CreateColorModel,Color>();
+            CreateMap<Color,GetByIdColorModel>();
+            CreateMap<List<Color>, List<GetColorsQuery>>();
         }
     }
 }

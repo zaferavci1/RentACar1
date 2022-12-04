@@ -38,7 +38,7 @@ namespace RentACar.Application.Car.Commands.DeleteCar
     public class UpdateCarModel
     { 
         public string Brand { get; set; }
-        public Color Color { get; set; }
+        public RentACar.Models.Siniflar.Color Color { get; set; }
         public int Price { get; set; }
         public int SeatCount { get; set; }
 

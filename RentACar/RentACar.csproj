@@ -165,6 +165,11 @@
     <Compile Include="Application\Car\Commands\UpdateCar\UpdateCarCommand.cs" />
     <Compile Include="Application\Car\Queries\GetById\GetByIdCarQuery.cs" />
     <Compile Include="Application\Car\Queries\GetCars\GetCarsQuery.cs" />
+    <Compile Include="Application\Color\Commands\CreateColor\CreateColorCommand.cs" />
+    <Compile Include="Application\Color\Commands\DeleteColor\DeleteColorCommand.cs" />
+    <Compile Include="Application\Color\Commands\UpdateColor\UpdateColorCommand.cs" />
+    <Compile Include="Application\Color\Queries\GetById\GetByIdColorQuery.cs" />
+    <Compile Include="Application\Color\Queries\GetColor\GetColorsQuery.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
@@ -178,7 +183,7 @@
     <Compile Include="Models\Siniflar\Category.cs" />
     <Compile Include="Models\Siniflar\Color.cs" />
     <Compile Include="Models\Siniflar\Comment.cs" />
-    <Compile Include="Models\Siniflar\Context.cs" />
+    <Compile Include="Models\Siniflar\RentACarDbContext.cs" />
     <Compile Include="Models\Siniflar\Customer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -221,8 +226,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Application\Category\" />
-    <Folder Include="Application\Color\Commands\" />
-    <Folder Include="Application\Color\Queries\" />
     <Folder Include="Application\Comment\Commands\" />
     <Folder Include="Application\Comment\Queries\" />
     <Folder Include="Application\Customer\Commands\" />
