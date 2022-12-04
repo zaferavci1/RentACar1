@@ -68,6 +68,12 @@
     <Reference Include="Microsoft.Extensions.Primitives, Version=3.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Extensions.Primitives.3.0.0\lib\netstandard2.0\Microsoft.Extensions.Primitives.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.Owin, Version=4.2.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.4.2.2\lib\net45\Microsoft.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Owin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f0ebd12fd5e55cc5, processorArchitecture=MSIL">
+      <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Buffers, Version=4.0.2.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Buffers.4.4.0\lib\netstandard2.0\System.Buffers.dll</HintPath>
@@ -165,6 +171,11 @@
     <Compile Include="Application\Car\Commands\UpdateCar\UpdateCarCommand.cs" />
     <Compile Include="Application\Car\Queries\GetById\GetByIdCarQuery.cs" />
     <Compile Include="Application\Car\Queries\GetCars\GetCarsQuery.cs" />
+    <Compile Include="Application\Category\Commands\CreateCategory\CreateCategoryCommand.cs" />
+    <Compile Include="Application\Category\Commands\DeleteCategory\DeleteCategoryCommand.cs" />
+    <Compile Include="Application\Category\Commands\UpdateCategory\UpdateCategoryCommand.cs" />
+    <Compile Include="Application\Category\Queries\GetByIdCategory\GetByIdCategoryQuery.cs" />
+    <Compile Include="Application\Category\Queries\GetCategories\GetCategoriesQuery.cs" />
     <Compile Include="Application\Color\Commands\CreateColor\CreateColorCommand.cs" />
     <Compile Include="Application\Color\Commands\DeleteColor\DeleteColorCommand.cs" />
     <Compile Include="Application\Color\Commands\UpdateColor\UpdateColorCommand.cs" />
@@ -225,7 +236,6 @@
     <Content Include="Views\Home\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Application\Category\" />
     <Folder Include="Application\Comment\Commands\" />
     <Folder Include="Application\Comment\Queries\" />
     <Folder Include="Application\Customer\Commands\" />

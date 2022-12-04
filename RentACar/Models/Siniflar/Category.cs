@@ -11,7 +11,7 @@ namespace RentACar.Models.Siniflar
     {
         [Key]
         public int Id { get; set; }
-        public string KategoryName { get; set; }
+        public string CategoryName { get; set; }
         public List<Car> Cars { get; set; }
     }
 }

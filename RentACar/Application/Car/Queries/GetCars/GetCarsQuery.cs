@@ -19,13 +19,13 @@ namespace RentACar.Application.Car.Queries.GetCars
         }
         public List<GetCarsModel> Handle()
         { 
-            return _mapper.Map <List<GetCarsModel>> (_context.Cars.OrderBy(x=>x.Id).ToList<RentACar.Models.Siniflar.Car>());
+            return _mapper.Map <List<GetCarsModel>> (_context.Cars.OrderBy(x=>x.Id).ToList());
         }
     }
     public class GetCarsModel
     { 
         public string Brand { get; set; }
-        public Color Color { get; set; }
+        public RentACar.Models.Siniflar.Color Color { get; set; }
         public int Price { get; set; }
         public int SeatCount { get; set; }
     }

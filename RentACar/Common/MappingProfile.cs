@@ -6,6 +6,9 @@ using RentACar.Application.Admin.Queries.GetById;
 using RentACar.Application.Car.Commands.CreateCar;
 using RentACar.Application.Car.Queries.GetById;
 using RentACar.Application.Car.Queries.GetCars;
+using RentACar.Application.Category.Commands.CreateCategory;
+using RentACar.Application.Category.Queries.GetByIdCategory;
+using RentACar.Application.Category.Queries.GetCategories;
 using RentACar.Application.Color.Commands;
 using RentACar.Application.Color.Queries.GetById;
 using RentACar.Application.Color.Queries.GetColor;
@@ -30,6 +33,9 @@ namespace RentACar.Common
             CreateMap<CreateColorModel,Color>();
             CreateMap<Color,GetByIdColorModel>();
             CreateMap<List<Color>, List<GetColorsQuery>>();
+            CreateMap<CreateCategoryModel,Category>();
+            CreateMap<Category,GetByIdCategoryModel>();
+            CreateMap<List<Category>,List<GetCategoriesModel>>();
         }
     }
 }

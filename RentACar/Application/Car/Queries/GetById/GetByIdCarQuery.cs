@@ -29,7 +29,7 @@ namespace RentACar.Application.Car.Queries.GetById
     public class GetByIdCarModel
     { 
             public string Brand { get; set; }
-            public Color Color { get; set; }
+            public RentACar.Models.Siniflar.Color Color { get; set; }
             public int Price { get; set; }
             public int SeatCount { get; set; }
     }
