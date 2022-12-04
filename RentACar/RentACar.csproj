@@ -168,19 +168,31 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Application\Admin\Commands\CreateAdmin\CreateAdminCommand.cs" />
+    <Compile Include="Application\Admin\Commands\CreateAdmin\CreateAdminCommandValidator.cs" />
     <Compile Include="Application\Admin\Commands\DeleteAdmin\DeleteAdminCommand.cs" />
+    <Compile Include="Application\Admin\Commands\DeleteAdmin\DeleteAdminCommandValidator.cs" />
     <Compile Include="Application\Admin\Commands\UpdateAdmin\UpdateAdminCommand.cs" />
+    <Compile Include="Application\Admin\Commands\UpdateAdmin\UpdateAdminCommandValidator.cs" />
     <Compile Include="Application\Admin\Queries\GetAdmins\GetAdminsQuery.cs" />
     <Compile Include="Application\Admin\Queries\GetById\GetByIdAdminQuery.cs" />
+    <Compile Include="Application\Admin\Queries\GetById\GetByIdAdminQueryValidator.cs" />
+    <Compile Include="Application\Car\Commands\CreateCar\CreateCarCommandValidator.cs" />
     <Compile Include="Application\Car\Commands\CreateCar\CreateCarCommand.cs" />
     <Compile Include="Application\Car\Commands\DeleteCar\DeleteCarCommand.cs" />
+    <Compile Include="Application\Car\Commands\DeleteCar\DeleteCarCommandValidator.cs" />
+    <Compile Include="Application\Car\Commands\UpdateCar\UpdateCarCommandValidator.cs" />
     <Compile Include="Application\Car\Commands\UpdateCar\UpdateCarCommand.cs" />
     <Compile Include="Application\Car\Queries\GetById\GetByIdCarQuery.cs" />
+    <Compile Include="Application\Car\Queries\GetById\GetByIdCarQueryValidator.cs" />
     <Compile Include="Application\Car\Queries\GetCars\GetCarsQuery.cs" />
     <Compile Include="Application\Category\Commands\CreateCategory\CreateCategoryCommand.cs" />
+    <Compile Include="Application\Category\Commands\CreateCategory\CreateCategoryCommandValidator.cs" />
     <Compile Include="Application\Category\Commands\DeleteCategory\DeleteCategoryCommand.cs" />
+    <Compile Include="Application\Category\Commands\DeleteCategory\DeleteCategoryCommandValidator.cs" />
     <Compile Include="Application\Category\Commands\UpdateCategory\UpdateCategoryCommand.cs" />
+    <Compile Include="Application\Category\Commands\UpdateCategory\UpdateCategoryCommandValidator.cs" />
     <Compile Include="Application\Category\Queries\GetByIdCategory\GetByIdCategoryQuery.cs" />
+    <Compile Include="Application\Category\Queries\GetByIdCategory\GetByIdCategoryQueryValidator.cs" />
     <Compile Include="Application\Category\Queries\GetCategories\GetCategoriesQuery.cs" />
     <Compile Include="Application\Color\Commands\CreateColor\CreateColorCommand.cs" />
     <Compile Include="Application\Color\Commands\DeleteColor\DeleteColorCommand.cs" />
