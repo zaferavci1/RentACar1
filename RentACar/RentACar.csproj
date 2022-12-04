@@ -58,6 +58,9 @@
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
+    <Reference Include="FluentValidation, Version=11.0.0.0, Culture=neutral, PublicKeyToken=7de548da2fbae0f0, processorArchitecture=MSIL">
+      <HintPath>..\packages\FluentValidation.11.4.0\lib\netstandard2.0\FluentValidation.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions, Version=3.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Extensions.DependencyInjection.Abstractions.3.0.0\lib\netstandard2.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
@@ -92,6 +95,9 @@
     </Reference>
     <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.5.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.6.0\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.2\lib\netstandard2.0\System.Threading.Tasks.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
@@ -162,19 +168,31 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Application\Admin\Commands\CreateAdmin\CreateAdminCommand.cs" />
+    <Compile Include="Application\Admin\Commands\CreateAdmin\CreateAdminCommandValidator.cs" />
     <Compile Include="Application\Admin\Commands\DeleteAdmin\DeleteAdminCommand.cs" />
+    <Compile Include="Application\Admin\Commands\DeleteAdmin\DeleteAdminCommandValidator.cs" />
     <Compile Include="Application\Admin\Commands\UpdateAdmin\UpdateAdminCommand.cs" />
+    <Compile Include="Application\Admin\Commands\UpdateAdmin\UpdateAdminCommandValidator.cs" />
     <Compile Include="Application\Admin\Queries\GetAdmins\GetAdminsQuery.cs" />
     <Compile Include="Application\Admin\Queries\GetById\GetByIdAdminQuery.cs" />
+    <Compile Include="Application\Admin\Queries\GetById\GetByIdAdminQueryValidator.cs" />
+    <Compile Include="Application\Car\Commands\CreateCar\CreateCarCommandValidator.cs" />
     <Compile Include="Application\Car\Commands\CreateCar\CreateCarCommand.cs" />
     <Compile Include="Application\Car\Commands\DeleteCar\DeleteCarCommand.cs" />
+    <Compile Include="Application\Car\Commands\DeleteCar\DeleteCarCommandValidator.cs" />
+    <Compile Include="Application\Car\Commands\UpdateCar\UpdateCarCommandValidator.cs" />
     <Compile Include="Application\Car\Commands\UpdateCar\UpdateCarCommand.cs" />
     <Compile Include="Application\Car\Queries\GetById\GetByIdCarQuery.cs" />
+    <Compile Include="Application\Car\Queries\GetById\GetByIdCarQueryValidator.cs" />
     <Compile Include="Application\Car\Queries\GetCars\GetCarsQuery.cs" />
     <Compile Include="Application\Category\Commands\CreateCategory\CreateCategoryCommand.cs" />
+    <Compile Include="Application\Category\Commands\CreateCategory\CreateCategoryCommandValidator.cs" />
     <Compile Include="Application\Category\Commands\DeleteCategory\DeleteCategoryCommand.cs" />
+    <Compile Include="Application\Category\Commands\DeleteCategory\DeleteCategoryCommandValidator.cs" />
     <Compile Include="Application\Category\Commands\UpdateCategory\UpdateCategoryCommand.cs" />
+    <Compile Include="Application\Category\Commands\UpdateCategory\UpdateCategoryCommandValidator.cs" />
     <Compile Include="Application\Category\Queries\GetByIdCategory\GetByIdCategoryQuery.cs" />
+    <Compile Include="Application\Category\Queries\GetByIdCategory\GetByIdCategoryQueryValidator.cs" />
     <Compile Include="Application\Category\Queries\GetCategories\GetCategoriesQuery.cs" />
     <Compile Include="Application\Color\Commands\CreateColor\CreateColorCommand.cs" />
     <Compile Include="Application\Color\Commands\DeleteColor\DeleteColorCommand.cs" />

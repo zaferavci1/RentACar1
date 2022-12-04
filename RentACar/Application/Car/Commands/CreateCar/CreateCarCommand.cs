@@ -8,12 +8,12 @@ using System.Web;
 
 namespace RentACar.Application.Car.Commands.CreateCar
 {
-    public class CreateCategoryCommand
+    public class CreateCarCommand
     {
         private readonly IMapper _mapper;
         private readonly RentACarDbContext _context;
         public CreateCarModel carModel { get; set; }
-        public CreateCategoryCommand(IMapper mapper , RentACarDbContext context  )
+        public CreateCarCommand(IMapper mapper , RentACarDbContext context  )
         {
             _mapper = mapper;
             _context = context;

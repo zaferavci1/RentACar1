@@ -7,13 +7,13 @@ using System.Web;
 
 namespace RentACar.Application.Admin.Commands.UpdateAdmin
 {
-    public class UpdateCategoryCommand
+    public class UpdateAdminCommand
     {
         public int id { get; set; }
         private readonly IMapper _mapper;
         private readonly RentACarDbContext _context;
         public UpdateAdminModel model { get; set; }
-        public UpdateCategoryCommand(RentACarDbContext context, IMapper mapper)
+        public UpdateAdminCommand(RentACarDbContext context, IMapper mapper)
         {
             _context = context;
             _mapper = mapper;
