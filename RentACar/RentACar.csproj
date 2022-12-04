@@ -181,6 +181,14 @@
     <Compile Include="Application\Color\Commands\UpdateColor\UpdateColorCommand.cs" />
     <Compile Include="Application\Color\Queries\GetById\GetByIdColorQuery.cs" />
     <Compile Include="Application\Color\Queries\GetColor\GetColorsQuery.cs" />
+    <Compile Include="Application\Comment\Commands\CreateComment\CreateCommentCommand.cs" />
+    <Compile Include="Application\Comment\Commands\DeleteComment\DeleteCommentCommand.cs" />
+    <Compile Include="Application\Comment\Commands\UpdateComment\UpdateCommentCommand.cs" />
+    <Compile Include="Application\Comment\Queries\GetById\GetByIdCommentQuery.cs" />
+    <Compile Include="Application\Comment\Queries\GetComment\GetCommentsQuery.cs" />
+    <Compile Include="Application\Customer\Commands\CreateCustomer\CreateCustomerCommand.cs" />
+    <Compile Include="Application\Customer\Commands\DeleteCustomer\DeleteCustomerCommand.cs" />
+    <Compile Include="Application\Customer\Commands\UpdateCustomer\UpdateCustomerCommand.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
@@ -236,9 +244,6 @@
     <Content Include="Views\Home\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Application\Comment\Commands\" />
-    <Folder Include="Application\Comment\Queries\" />
-    <Folder Include="Application\Customer\Commands\" />
     <Folder Include="Application\Customer\Queries\" />
     <Folder Include="App_Data\" />
   </ItemGroup>

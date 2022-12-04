@@ -20,7 +20,7 @@ namespace RentACar.Application.Color.Commands
         public void Handle()
         {
             var color = _context.Colors.SingleOrDefault(x => x.Id == id);
-            if(color != null)
+            if(color == null)
             {
                 throw new Exception("silinecek renk yok");
             }

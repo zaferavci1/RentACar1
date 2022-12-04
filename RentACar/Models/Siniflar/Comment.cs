@@ -13,7 +13,7 @@ namespace RentACar.Models.Siniflar
         public string Name { get; set; }
         public string Description { get; set; }
         public DateTime PublishDate { get; set; }
-        public bool check { get; set; } = false;
+        public bool Check { get; set; } = false;
 
 
     }

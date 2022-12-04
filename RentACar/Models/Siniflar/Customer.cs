@@ -10,6 +10,7 @@ namespace RentACar.Models.Siniflar
     {
         [Key]
         public int Id { get; set; }
+        public string Tc { get; set; }
         public string Name { get; set; }
         public string Address { get; set; }
 
