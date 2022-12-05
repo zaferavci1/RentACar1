@@ -16,6 +16,8 @@ using RentACar.Application.Comment.Commands.CreateComment;
 using RentACar.Application.Comment.Queries.GetById;
 using RentACar.Application.Comment.Queries.GetComment;
 using RentACar.Application.Customer.Commands.CreateCustomer;
+using RentACar.Application.Customer.Queries.GetById;
+using RentACar.Application.Customer.Queries.GetCustomer;
 using RentACar.Models.Siniflar;
 using System;
 using System.Collections.Generic;
@@ -44,6 +46,8 @@ namespace RentACar.Common
             CreateMap<CreateCategoryModel,Category>();
             CreateMap<Category,GetByIdCategoryModel>();
             CreateMap<List<Category>,List<GetCategoriesModel>>();
+            CreateMap<Customer, GetByIdCustomerModel>();
+            CreateMap<List<Customer>, List<GetCustomersModel>>();
         }
     }
 }

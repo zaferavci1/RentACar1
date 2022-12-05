@@ -21,7 +21,7 @@ namespace RentACar.Application.Customer.Commands.CreateCustomer
 
         public void Handle()
         {
-            var customer = _context.Customers.FirstOrDefault(x => x.Tc == customerModel.Tc);
+            var customer = _context.Customers.FirstOrDefault(x => x.NationalId == customerModel.NationalId);
             if(customer != null)
             {
                 throw new Exception("Aynı Tc'ye sahip kişi bulunuyor.");
@@ -35,7 +35,7 @@ namespace RentACar.Application.Customer.Commands.CreateCustomer
     public  class CreateCustomerModel
     {
         public string Name { get; set; }
-        public string Tc { get; set; }
+        public string NationalId { get; set; }
         public string Address { get; set; }
     }
 }

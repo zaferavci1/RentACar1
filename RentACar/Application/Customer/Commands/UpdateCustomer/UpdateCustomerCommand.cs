@@ -28,15 +28,15 @@ namespace RentACar.Application.Customer.Commands.UpdateCustomer
                 throw new Exception("Müşteri bulunamadı");
             }
             customer.Name = customerModel.Name = default ? customer.Name : customerModel.Name;
-            customer.Tc = customerModel.Tc = default ? customer.Tc : customerModel.Tc;
+            customer.NationalId = customerModel.NationalId = default ? customer.NationalId : customerModel.NationalId;
             customer.Address = customerModel.Address = default ? customer.Address : customerModel.Address;
             _context.SaveChanges();
         }
     }
     public class UpdateCustomerModel
     {
-        public string Tc { get; set; }
         public string Name { get; set; }
+        public string NationalId { get; set; }
         public string Address { get; set; }
     }
 }

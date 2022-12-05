@@ -21,7 +21,7 @@ namespace RentACar.Application.Comment.Commands.CreateComment
 
         public void Handle()
         {
-            var comment = _context.Comments.SingleOrDefault(x => x.Description == commentModel.Decription);
+            var comment = _context.Comments.SingleOrDefault(x => x.Description == commentModel.Description);
             if(comment != null)
             {
                 throw new Exception("Bu açıklmada yorum vardır.");
@@ -34,8 +34,8 @@ namespace RentACar.Application.Comment.Commands.CreateComment
 
     public class CreateCommentModel
     {
-        public string name { get; set; }
-        public string Decription { get; set; }
+        public string Name { get; set; }
+        public string Description { get; set; }
         public DateTime PublishDate { get; set; }
         public bool Check { get; set; }
     }

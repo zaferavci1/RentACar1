@@ -195,18 +195,32 @@
     <Compile Include="Application\Category\Queries\GetByIdCategory\GetByIdCategoryQueryValidator.cs" />
     <Compile Include="Application\Category\Queries\GetCategories\GetCategoriesQuery.cs" />
     <Compile Include="Application\Color\Commands\CreateColor\CreateColorCommand.cs" />
+    <Compile Include="Application\Color\Commands\CreateColor\CreateColorCommandValidator.cs" />
+    <Compile Include="Application\Color\Commands\DeleteColor\DeleteColorCommandValidator.cs" />
     <Compile Include="Application\Color\Commands\DeleteColor\DeleteColorCommand.cs" />
     <Compile Include="Application\Color\Commands\UpdateColor\UpdateColorCommand.cs" />
+    <Compile Include="Application\Color\Commands\UpdateColor\UpdateColorCommandValidator.cs" />
     <Compile Include="Application\Color\Queries\GetById\GetByIdColorQuery.cs" />
+    <Compile Include="Application\Color\Queries\GetById\GetByIdColorQueryValidator.cs" />
     <Compile Include="Application\Color\Queries\GetColor\GetColorsQuery.cs" />
     <Compile Include="Application\Comment\Commands\CreateComment\CreateCommentCommand.cs" />
+    <Compile Include="Application\Comment\Commands\CreateComment\CreateCommentCommandValidator.cs" />
     <Compile Include="Application\Comment\Commands\DeleteComment\DeleteCommentCommand.cs" />
+    <Compile Include="Application\Comment\Commands\DeleteComment\DeleteCommentCommandValidator.cs" />
     <Compile Include="Application\Comment\Commands\UpdateComment\UpdateCommentCommand.cs" />
+    <Compile Include="Application\Comment\Commands\UpdateComment\UpdateCommentCommandValidator.cs" />
     <Compile Include="Application\Comment\Queries\GetById\GetByIdCommentQuery.cs" />
+    <Compile Include="Application\Comment\Queries\GetById\GetByIdCommentQueryValidator.cs" />
     <Compile Include="Application\Comment\Queries\GetComment\GetCommentsQuery.cs" />
     <Compile Include="Application\Customer\Commands\CreateCustomer\CreateCustomerCommand.cs" />
+    <Compile Include="Application\Customer\Commands\CreateCustomer\CreateCustomerCommandValidator.cs" />
+    <Compile Include="Application\Customer\Commands\DeleteCustomer\DeleteCustomerCommandValidator.cs" />
     <Compile Include="Application\Customer\Commands\DeleteCustomer\DeleteCustomerCommand.cs" />
     <Compile Include="Application\Customer\Commands\UpdateCustomer\UpdateCustomerCommand.cs" />
+    <Compile Include="Application\Customer\Commands\UpdateCustomer\UpdateCustomerCommandValidator.cs" />
+    <Compile Include="Application\Customer\Queries\GetById\GetByIdCustomerQuery.cs" />
+    <Compile Include="Application\Customer\Queries\GetById\GetByIdCustomerValidator.cs" />
+    <Compile Include="Application\Customer\Queries\GetCustomer\GetCustomersQuery.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
@@ -262,7 +276,6 @@
     <Content Include="Views\Home\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Application\Customer\Queries\" />
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>

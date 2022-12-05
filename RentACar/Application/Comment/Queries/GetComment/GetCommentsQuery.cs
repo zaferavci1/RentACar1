@@ -11,7 +11,6 @@ namespace RentACar.Application.Comment.Queries.GetComment
     {
         private readonly RentACarDbContext _context;
         private readonly IMapper _mapper;
-        public GetCommentsModel _model;
 
         public GetCommentsQuery(IMapper mapper, RentACarDbContext context)
         {
