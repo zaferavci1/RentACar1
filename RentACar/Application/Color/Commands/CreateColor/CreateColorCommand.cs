@@ -1,9 +1,7 @@
 ﻿using AutoMapper;
 using RentACar.Models;
 using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Web;
 
 namespace RentACar.Application.Color.Commands
 {
@@ -21,7 +19,7 @@ namespace RentACar.Application.Color.Commands
         public void Handle()
         {
             var color = _context.Colors.SingleOrDefault(x => x.Name == colorModel.Name);
-            if(color != null)
+            if (color != null)
             {
                 throw new Exception("Bu iside renk var");
             }
