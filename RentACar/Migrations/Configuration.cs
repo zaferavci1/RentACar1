@@ -10,6 +10,10 @@
         public Configuration()
         {
             AutomaticMigrationsEnabled = true;
+<<<<<<< HEAD
+=======
+            ContextKey = "RentACar.Models.RentACarDbContext";
+>>>>>>> refs/remotes/origin/master
         }
 
         protected override void Seed(RentACar.Models.RentACarDbContext context)

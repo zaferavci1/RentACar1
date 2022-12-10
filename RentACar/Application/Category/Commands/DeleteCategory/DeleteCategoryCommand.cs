@@ -25,6 +25,11 @@ namespace RentACar.Application.Category.Commands.DeleteCategory
             {
                 throw new InvalidOperationException("Silinecek Kategori Bulunamadı");
             }
+            var car = _context.Cars.FirstOrDefault(x => x.CategoryId == category.Id);
+            if(car==null)
+            {
+                throw new InvalidOperationException("Silinecek Kategorinin sahip oldugu arabalar var");
+            }
             _context.Categories.Remove(category);
             _context.SaveChanges();
         }

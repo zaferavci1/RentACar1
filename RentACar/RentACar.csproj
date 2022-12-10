@@ -231,9 +231,15 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="Migrations\202212091252485_updateTablo.cs" />
     <Compile Include="Migrations\202212091252485_updateTablo.designer.cs">
       <DependentUpon>202212091252485_updateTablo.cs</DependentUpon>
+=======
+    <Compile Include="Migrations\202212062107422_InitialCreate.cs" />
+    <Compile Include="Migrations\202212062107422_InitialCreate.Designer.cs">
+      <DependentUpon>202212062107422_InitialCreate.cs</DependentUpon>
+>>>>>>> refs/remotes/origin/master
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Siniflar\Admin.cs" />
@@ -483,6 +489,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\Car\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -498,8 +505,13 @@
     <Content Include="Scripts\jquery-3.4.1.min.map" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <EmbeddedResource Include="Migrations\202212091252485_updateTablo.resx">
       <DependentUpon>202212091252485_updateTablo.cs</DependentUpon>
+=======
+    <EmbeddedResource Include="Migrations\202212062107422_InitialCreate.resx">
+      <DependentUpon>202212062107422_InitialCreate.cs</DependentUpon>
+>>>>>>> refs/remotes/origin/master
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

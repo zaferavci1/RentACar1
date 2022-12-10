@@ -376,5 +376,14 @@ C:\github\RentACar\RentACar\bin\System.Memory.xml
 C:\github\RentACar\RentACar\bin\System.Numerics.Vectors.xml
 C:\github\RentACar\RentACar\bin\System.Runtime.CompilerServices.Unsafe.xml
 C:\github\RentACar\RentACar\bin\System.Threading.Tasks.Extensions.xml
+<<<<<<< HEAD
 C:\github\RentACar\RentACar\obj\Debug\RentACar.Migrations.updateTablo.resources
 C:\github\RentACar\RentACar\obj\Debug\RentACar.csproj.GenerateResource.cache
+=======
+C:\Users\serkan\Documents\GitHub\RentACar\RentACar\bin\FluentValidation.dll
+C:\Users\serkan\Documents\GitHub\RentACar\RentACar\bin\System.Threading.Tasks.Extensions.dll
+C:\Users\serkan\Documents\GitHub\RentACar\RentACar\bin\FluentValidation.xml
+C:\Users\serkan\Documents\GitHub\RentACar\RentACar\bin\System.Threading.Tasks.Extensions.xml
+C:\Users\serkan\Documents\GitHub\RentACar\RentACar\obj\Debug\RentACar.Migrations.InitialCreate.resources
+C:\Users\serkan\Documents\GitHub\RentACar\RentACar\obj\Debug\RentACar.csproj.GenerateResource.cache
+>>>>>>> refs/remotes/origin/master

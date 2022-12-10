@@ -1,4 +1,8 @@
-﻿using System;
+﻿using AutoMapper;
+using RentACar.Application.Car.Queries.GetCars;
+using RentACar.Common;
+using RentACar.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,6 +12,8 @@ namespace RentACar.Controllers
 {
     public class HomeController : Controller
     {
+        RentACarDbContext context= new RentACarDbContext();
+
         public ActionResult Index()
         {
             return View();
@@ -15,9 +21,9 @@ namespace RentACar.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
-
-            return View();
+            GetCarsQuery query = new GetCarsQuery(context);
+            
+            return View(query.Handle());
         }
 
         public ActionResult Contact()

@@ -12,14 +12,23 @@ namespace RentACar.Application.Car.Queries.GetCars
     {
         private readonly IMapper _mapper;
         private readonly RentACarDbContext _context;
-        public GetCarsQuery(RentACarDbContext context, IMapper mapper)
+        public GetCarsQuery(RentACarDbContext context)
         {
             _context = context;
-            _mapper = mapper;
         }
         public List<GetCarsModel> Handle()
-        { 
-            return _mapper.Map <List<GetCarsModel>> (_context.Cars.OrderBy(x=>x.Id).ToList());
+        {
+            var cars = new List<GetCarsModel>();
+            var car = new GetCarsModel();
+            foreach (var item in _context.Cars.OrderBy(x=>x.Id))
+            {
+                car.Brand = item.Brand;
+                car.Color=item.Color;
+                car.Price=item.Price;
+                car.SeatCount = item.SeatCount;
+                cars.Add(car);
+            }
+            return cars;
         }
     }
     public class GetCarsModel
