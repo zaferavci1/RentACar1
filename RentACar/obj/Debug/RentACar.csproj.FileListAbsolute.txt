@@ -376,3 +376,5 @@ C:\github\RentACar\RentACar\bin\System.Memory.xml
 C:\github\RentACar\RentACar\bin\System.Numerics.Vectors.xml
 C:\github\RentACar\RentACar\bin\System.Runtime.CompilerServices.Unsafe.xml
 C:\github\RentACar\RentACar\bin\System.Threading.Tasks.Extensions.xml
+C:\github\RentACar\RentACar\obj\Debug\RentACar.Migrations.updateTablo.resources
+C:\github\RentACar\RentACar\obj\Debug\RentACar.csproj.GenerateResource.cache
