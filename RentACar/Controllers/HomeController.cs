@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using RentACar.Application.Car.Queries.GetCars;
 using RentACar.Common;
+using RentACar.Migrations;
 using RentACar.Models;
 using System;
 using System.Collections.Generic;
@@ -21,6 +22,8 @@ namespace RentACar.Controllers
 
         public ActionResult About()
         {
+            InitialCreate ınitialCreate = new InitialCreate();
+            ınitialCreate.Up();
             GetCarsQuery query = new GetCarsQuery(context);
             
             return View(query.Handle());
