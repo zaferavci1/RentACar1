@@ -1,0 +1,29 @@
+﻿@using RentACar.Models.Siniflar;
+@model List<Car>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutNavBar.cshtml";
+}
+
+<table class=" table table.">
+    <tr>
+        <th>ID</th>
+        <th>BRAND</th>
+        <th>COLO</th>
+        <th>PRICE</th>
+        <th>SEATCOUNT</th>
+        <th>CATEGORY</th>
+
+    </tr>
+    @foreach(var x in Model)
+            {
+                <tr>
+                    <th>@x.Id</th>
+                    <th>@x.Brand</th>
+                    <th>@x.Color.Name</th>
+                    <th>@x.Price</th>
+                    <th>@x.SeatCount</th>
+                    <th>@x.Category.CategoryName</th>
+                </tr>
+            }
+</table>

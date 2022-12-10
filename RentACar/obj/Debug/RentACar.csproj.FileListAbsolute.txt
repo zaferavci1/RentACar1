@@ -382,3 +382,4 @@ C:\Users\serkan\Documents\GitHub\RentACar\RentACar\bin\FluentValidation.xml
 C:\Users\serkan\Documents\GitHub\RentACar\RentACar\bin\System.Threading.Tasks.Extensions.xml
 C:\Users\serkan\Documents\GitHub\RentACar\RentACar\obj\Debug\RentACar.Migrations.InitialCreate.resources
 C:\Users\serkan\Documents\GitHub\RentACar\RentACar\obj\Debug\RentACar.csproj.GenerateResource.cache
+C:\Users\serkan\Documents\GitHub\RentACar\RentACar\obj\Debug\RentACar.Migrations.classlargüncellendi.resources
