@@ -11,9 +11,12 @@ namespace RentACar.Models.Siniflar
         [Key]
         public int Id { get; set; }
         public string Brand { get; set; }
+        public int ColorId { get; set; }
         public Color Color { get; set; }
         public int Price { get; set; }
         public int SeatCount { get; set; }
+        public int CategoryId { get; set; }
+        public Category Category { get; set; }
 
     }
 }

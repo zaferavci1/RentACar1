@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Microsoft.Ajax.Utilities;
 using RentACar.Models;
 using System;
 using System.Collections.Generic;
@@ -23,6 +24,11 @@ namespace RentACar.Application.Color.Commands
             if(color == null)
             {
                 throw new Exception("silinecek renk yok");
+            }
+            var cars = _context.Cars.FirstOrDefault(x => x.ColorId == color.Id);
+            if(cars==null)
+            {
+                throw new Exception("silinecek rengin kullanıldıgı arabalar var. Renk silinemez.");
             }
             _context.Colors.Remove(color);
             _context.SaveChanges();
